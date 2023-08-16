@@ -1,0 +1,517 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif !important;
+  font-size: 16px;
+  line-height: 1.5rem;
+  font-weight: 400;
+}
+html{
+  scroll-behavior: smooth;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+#navbar-example2 {
+	position: fixed;
+	z-index: 9;
+	width: 100%;
+  transition: 1s ease;
+  top: 0%;
+}
+.white{
+  background: #fff;
+}
+a {
+  text-decoration: none !important;
+  list-style: none !important;
+}
+.navbar-brand {
+  width: 50%;
+}
+.nav-link {
+  text-transform: uppercase;
+  font-weight: 500 !important;
+  padding: 0px 10px !important;
+  font-family: "Poppins", sans-serif;
+}
+.nav-link:hover {
+  background: linear-gradient(to right, #92fe9d, #00c9ff);
+  border-radius: 50px;
+  transition: 2s;
+  color: #fff !important;
+}
+.navbar-nav .active{
+  color: #fff;
+  background: rgba(0, 0, 0, 0) linear-gradient(to right, #92fe9d, #00c9ff);
+  border-radius:50px;
+}
+/* -- header-end----------------------- */
+/* carousel------- */
+.carousel-control-next,
+.carousel-control-prev {
+  bottom: -75% !important ;
+  display: inline-block !important;
+  right: 10% !important;
+}
+.carousel-control-prev {
+  left: 70% !important;
+}
+.carousel-caption {
+  bottom: 20% !important;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+}
+.carousel-caption h5 {
+  font-size: 3rem !important;
+  font-weight: 800 !important;
+  letter-spacing: 2px;
+}
+.carousel-caption p {
+  font-size: 1rem;
+  text-transform: capitalize;
+}
+.btn a {
+  display: inline-block;
+  padding: 6px 25px;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 12px;
+}
+.btn a:hover {
+  background: linear-gradient(to right, #92fe9d, #00c9ff);
+  color: #fff;
+}
+.btn a:last-child {
+  background: linear-gradient(to right, #92fe9d, #00c9ff);
+}
+.btn a:last-child:hover {
+  background: transparent;
+}
+
+.section_padding {
+  padding: 100px 0px;
+}
+/* section-about */
+.icon-content {
+  margin-bottom: 60px;
+}
+.read-more {
+  background: rgba(0, 0, 0, 0) linear-gradient(to right, #92fe9d, #00c9ff)
+    repeat scroll 0 0;
+  border-radius: 50px;
+  color: #fff;
+  display: inline-block;
+  letter-spacing: 1px;
+  margin-right: 10px;
+  margin-top: 20px;
+  padding: 10px 25px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.read-more:hover {
+  background: #252525;
+  color: #fff;
+}
+.icon-content h2 {
+  padding: 10px 0px 0px 15px;
+  margin: 0px;
+  font-weight: 600;
+}
+.layer-2 {
+  margin-top: 80px;
+}
+/* section--service*/
+.bg_img,
+.team-member-details {
+  background: rgba(0, 0, 0, 0) url("../images/bg-img.jpg") no-repeat scroll
+    center center / cover;
+}
+.service-menu ul {
+  list-style: none;
+}
+.service-menu li a {
+  color: #000;
+  display: block;
+  margin-bottom: 5px;
+  padding: 10px;
+}
+.service-menu .active  {
+  color: #fff;
+  background: rgba(0, 0, 0, 0) linear-gradient(to right, #92fe9d, #00c9ff)
+    repeat scroll 0 0;
+}
+#tabs-nav li:first-child {
+  color: #fff;
+  background: rgba(0, 0, 0, 0) linear-gradient(to left, #92fe9d, #00c9ff) repeat
+    scroll 0 0;
+}
+.service-menu li a:hover {
+  background: rgba(0, 0, 0, 0) linear-gradient(to right, #92fe9d, #00c9ff)
+    repeat scroll 0 0;
+}
+.service-content {
+  background: #fff;
+  padding: 20px;
+}
+.details {
+  border: 1px solid #00c9ff;
+  padding: 20px;
+}
+/* section--service----end*/
+/* -----section--------team----------- */
+.team-member-details ul li {
+  display: inline-block;
+}
+.team-member-details {
+  text-align: center;
+  padding: 20px;
+}
+.team-member-details ul {
+  padding: 0px;
+  margin: 0px;
+}
+.team-member-img::after {
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  content: "";
+  width: 0%;
+  height: 0%;
+  border-right: 1px solid #00c9ff;
+  border-bottom: 1px solid #00c9ff;
+  transition: 0.3s;
+}
+.team-member-img::before {
+  top: 0;
+  left: 0;
+  position: absolute;
+  content: "";
+  width: 0%;
+  height: 0%;
+  border-left: 1px solid #00c9ff;
+  border-top: 1px solid #00c9ff;
+  transition: 0.3s;
+}
+.team-member-img {
+  position: relative;
+}
+.team:hover .team-member-img::after,
+.team:hover .team-member-img::before {
+  width: 100%;
+  height: 100%;
+}
+.team-member-details ul li a {
+  color: #252525;
+  padding: 10px;
+}
+.team-member-details ul li a:hover {
+  transition: 0.3s;
+  color: #fff;
+  background: rgba(0, 0, 0, 0) linear-gradient(to left bottom, #92fe9d, #00c9ff)
+    repeat scroll 0 0;
+}
+/* -----section--------team- end---------- */
+/* -----section--------facility----------- */
+.facility-box {
+  background: #fff none repeat scroll 0 0;
+  margin-bottom: 30px;
+  padding: 30px;
+  position: relative;
+  text-align: center;
+  transition: all 0.3s ease 0s;
+  z-index: 1;
+}
+.facility-box::before {
+  border: 1px solid #00c9ff;
+  content: "";
+  height: calc(100% - 20px);
+  left: 10px;
+  position: absolute;
+  top: 10px;
+  width: calc(100% - 20px);
+  z-index: -1;
+}
+.facility-box i {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #92fe9d;
+}
+.facility-box h4 {
+  font-size: 18px;
+  font-weight: 600;
+}
+.facility-box:hover {
+  box-shadow: 0 10px 15px #999;
+  transform: translateY(-5px);
+}
+.facility-box:hover h4 {
+  color: #00c9ff;
+}
+/* -----section--------facility---enx----------- */
+/* ----section--testmonial */
+.member img {
+  border-radius: 50%;
+  width: 100px !important;
+  height: 100px;
+  display: inline-block !important;
+}
+.item {
+  text-align: center;
+  padding: 70px 0px;
+}
+.member-details {
+  color: #000;
+  padding: 20px 20px 40px 20px;
+}
+.member-details h3::after {
+  background: red none repeat scroll 0 0;
+  bottom: 0;
+  content: "";
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  width: 100px;
+}
+.member-details h3 {
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  padding-bottom: 15px;
+  position: relative;
+  text-transform: uppercase;
+}
+.member-details p {
+  font-size: 17px;
+  line-height: 1.5;
+  margin: 0px;
+}
+#testmonial {
+  position: relative;
+  padding: 0px 0px 50px 0px;
+}
+.testmonial_bg_img {
+  background: url("../images/testmonial-right-bg.jpg") no-repeat scroll right
+      center / 50% 100%,
+    rgba(0, 0, 0, 0) linear-gradient(to left bottom, #00c9ff, #92fe9d) repeat
+      scroll 0 0;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+/* ----section--testmonial--end-- */
+/* section--appoinment--------------------- */
+
+.padding-top {
+  padding-top: 100px;
+}
+.are_bg_img {
+  background: rgba(0, 0, 0, 0) url("../images/bg-img.jpg") no-repeat scroll
+    center center / cover;
+}
+.top_appoinment {
+  margin-bottom: -100px;
+  position: relative;
+  z-index: 1;
+}
+.appoinment-box {
+  background: rgba(0, 0, 0, 0) linear-gradient(to left bottom, #00c9ff, #92fe9d)
+    repeat scroll 0 0;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 200px;
+  padding: 20px;
+}
+.appoinment-box h3 {
+  font-size: 18px;
+  font-weight: 500;
+}
+.appoinment-box input {
+  background: rgba(255, 255, 255, 0.5) none repeat scroll 0 0;
+  border: 0 none;
+  border-radius: 50px;
+  margin: 5px 0;
+  padding: 15px 20px;
+  width: 100%;
+  transition: 0.3s;
+}
+#date_picker,
+#time_picker,
+#date_picker_2,
+#time_picker_2 {
+  display: inline-block;
+  width: 48%;
+}
+.appoinment-box button {
+  background: rgba(255, 255, 255, 0.5) none repeat scroll 0 0;
+  border: 2px solid #fff;
+  border-radius: 50px;
+  display: inline-block;
+  letter-spacing: 1px;
+  margin: 10px auto;
+  padding: 13px 20px;
+  transition: all 0.3s ease 0s;
+}
+.appoinment-box p {
+  margin: 0 0 10px;
+}
+.appoinment-box button:hover {
+  background: #fff none repeat scroll 0 0;
+}
+/* bottom_appoinment-- */
+.bottom_appoinment {
+  position: relative;
+}
+.Martin_Paul_content {
+  padding: 20px 0px;
+}
+.Martin_Paul {
+  padding-top: 250px;
+  margin-bottom: 30px;
+}
+.Martin_Paul h3 {
+  color: #00c9ff;
+  margin-bottom: 5px;
+}
+.Martin_Paul_content h2 {
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+.Martin_Paul_content h2 span {
+  font-weight: 700;
+  color: #00c9ff;
+}
+.Martin_Paul_img {
+  bottom: 0px;
+  position: absolute;
+  right: 0;
+}
+/* section--appoinment------end---- */
+/* -----contact--------------------- */
+.contact {
+  margin-bottom: 30px;
+  padding-left: 55px;
+  position: relative;
+}
+.contact_icon {
+  border: 1px solid;
+  border-radius: 50%;
+  color: #00c9ff;
+  font-size: 25px;
+  height: 45px;
+  left: 0;
+  padding: 5px;
+  position: absolute;
+  text-align: center;
+  width: 45px;
+}
+.contact-img {
+  padding-top: 130px;
+}
+/* --------------contact--------------end------------end----------end------------------------------------------------- */
+/* footer */
+footer {
+  padding: 50px;
+  position: relative;
+}
+.footer_bg_img {
+  background: rgba(0, 0, 0, 0) url("../images/bg-img.jpg") no-repeat scroll
+    center center / cover;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.copy-right,
+.footer_icon {
+  position: absolute;
+}
+.footer_icon ul li a {
+  color: #252525;
+  padding: 10px;
+}
+.footer_icon ul li {
+  display: inline-block;
+}
+.footer_icon ul li a:hover {
+  background: rgba(0, 0, 0, 0) linear-gradient(to left top, #00c9ff, #92fe9d)
+    repeat scroll 0 0;
+}
+/* ---footer---end------ */
+/* respossive----------------respossive--------------------respossive-------------------respossive-------- */
+
+@media (max-width: 991px) {
+  .carousel-caption h5 {
+    font-size: 2.25rem !important;
+  }
+  h3 {
+    font-size: calc(1.1rem + 0.6vw) !important;
+  }
+  .testmonial_bg_img {
+    background: rgba(0, 0, 0, 0)
+      linear-gradient(to left bottom, #00c9ff, #92fe9d) repeat scroll 0 0;
+  }
+  #testmonial .row {
+    justify-content: center;
+  }
+  .copy-right {
+    left: 25%;
+  }
+  .footer_icon {
+    top: 80%;
+    left: 35%;
+  }
+  
+}
+@media (max-width: 767px) {
+  .section_padding {
+    padding: 50px 0px;
+  }
+  .team {
+    padding-bottom: 20px;
+  }
+  .appoinment-box {
+    margin-bottom: 20px;
+  }
+  .padding-top {
+    padding-top: 50px;
+  }
+  .Martin_Paul {
+    padding-top: 100px;
+  }
+  .Martin_Paul_img {
+    position: inherit;
+  }
+  #contact h2 {
+    font-size: 23px;
+  }
+  .contact-img {
+    padding-top: 0px;
+  }
+}
+
+@media (max-width: 576px) {
+  .copy-right {
+    display: none;
+  }
+  .footer_icon {
+    top: 10%;
+    left: 20%;
+  }
+  footer {
+    padding: 10px;
+  }
+}
